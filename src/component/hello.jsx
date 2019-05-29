@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Home from "./Home";
 
 const Image = styled.img`
   width: 100%;

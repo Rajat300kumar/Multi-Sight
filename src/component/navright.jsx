@@ -10,11 +10,6 @@ class NavRight extends Component {
             src="https://d19m59y37dris4.cloudfront.net/directory/1-1/img/logo.svg"
             alt=""
           />
-          <input
-            style={{ borderRadius: 3, marginLeft: 5 }}
-            type="search"
-            placeholder="Search"
-          />
         </nav>
       </React.Fragment>
     );

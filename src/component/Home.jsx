@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-
+import Persanal from "./Personalinfo";
 import Layout from "./layout";
+import Homeimage from "./homeimage";
+import HomeContent from "./homecontents";
 
 class Home extends Component {
   state = {};
   render() {
     return (
       <Layout>
-        <div style={{ textAlign: "center" }}>
-          <h1>Hello This is</h1>
-          <h1>a Blank Home Page</h1>
-          <h1>And i Make it Latter</h1>
-        </div>
+        <Homeimage />
+        <HomeContent />
+        <Persanal />
       </Layout>
     );
   }

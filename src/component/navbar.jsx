@@ -27,6 +27,17 @@ const LII = styled.div`
 const Unorder = styled.ul`
   background-color: #e9ecef;
   height: 60px;
+  background-color: #fff !important;
+  position: relative;
+  padding: initial;
+  display: flex;
+
+  flex-wrap: wrap;
+  margin: -11px;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: space-between;
 `;
 class navBar extends Component {
   state = {};
@@ -35,8 +46,13 @@ class navBar extends Component {
       <React.Fragment>
         <div className="nav navbar bg-white  ">
           <NavRight />
-          <Unorder className="nav justify-content-end navbar bg-white ">
-            <NavDrop />
+          <Unorder>
+            <li>
+              <Link class="nav-link" to="/">
+                {" "}
+                Home
+              </Link>
+            </li>
             <li>
               <Link class="nav-link" to="/contact">
                 Contact
@@ -51,15 +67,6 @@ class navBar extends Component {
               <Link class="nav-link" to="/Signup" tabindex="-1">
                 Sign up
               </Link>
-            </li>
-            <li>
-              <button
-                style={{ marginRight: 15, justifyContent: "center" }}
-                className="btn btn-primary"
-              >
-                {" "}
-                ADD a List
-              </button>
             </li>
           </Unorder>
         </div>
